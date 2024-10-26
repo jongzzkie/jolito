@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sponsor Registration Form</title>
+
+    <style>
+        h1 {
+            text-align: center;
+            background: linear-gradient(rgb(68, 38, 68), #012324, #630bf1);
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: rgb(82, 12, 12);
+            padding: 10px;
+        }
+
+        body {
+            font-family: 'Times New Roman', Times, serif, sans-serif;
+            background-image: url('starynight.jpg');
+            background-repeat: no-repeat;
+            background-position: contain;
+            background-size: cover;
+        }
+        .name-container{
+            display: flex; 
+        }
+        .name-container input {
+            flex: 1; 
+            margin-right: 5px; 
+            margin-left: 1%;
+            width: 0.1%;
+        }
+        .container {
+            width: 80%;
+            max-width: 600px;
+            margin: 50px auto;
+            background-color: #91becfb5;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 1);
+        }
+
+        .container2 {
+            background: #f6f6f6;
+            border-radius: 8px;
+            overflow: hidden;
+            padding: 10px;
+            position: relative;
+        }
+
+        .center-line {
+            position: absolute;
+            top: 10%;
+            bottom: 50;
+            left: 50%;
+            border-left: 0.5px solid #797878;
+            height: 100%;
+            transform: translateX(-50%);
+        }
+
+        form {
+            margin-top: 10px;
+            background: rgba(47, 190, 242, 0.767);
+            border-radius: 0.25rem;
+        }
+
+        .form-group {
+            margin-bottom: 10px;
+            justify-content: right;
+        }
+
+        label {
+            font-weight: bold;
+        }
+
+        .col1 {
+            float: left;
+            width: 50%;
+        }
+
+        .col2 {
+            margin: 2%;
+            float: left;
+            width: 45%;
+        }
+
+        input[type="SUBMIT"] {
+            background-color: #630421;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        input[type="RESET"] {
+            background-color: #630421;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        input[type="RETURN TO MAIN PAGE"] {
+            background-color: #630421;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+
+        input[type="SUBMIT"]:hover {
+            background-color: #630421;
+        }
+        input[type="RESET"]:hover {
+            background-color: #630421;
+        }
+        input[type="RETURN TO MAIN PAGE"]:hover {
+            background-color: #630421;
+        }
+
+        p {
+            font-size: 20px;
+            color: rgb(0, 0, 0);
+            text-shadow: 3px 3px 4px #000000;
+            line-height: 1;
+        }
+        textarea {
+            display: block;
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+            margin-top: 5px;
+            resize: none;
+        }
+
+        input[type="text"] {
+            width: calc(100% - 20px); /* Adjusted width */
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+            margin-top: 5px;
+            margin-bottom: 10px;
+        }
+
+    </style>
+
+
+</head>
+<body>
+<div class="container">
+    <div class="container2">
+    <h1>Sponsor Registration Form</h1>
+    <form id="survey-form" action="#" method="post">
+            <div class="col1">
+                <div class="form-group">
+                    <label for="prefix">Prefix:</label>
+                    <input type="text" id="prefix" placeholder="Dr., Mr., Mrs., Ms." required/>
+                </div>
+                <div class="form-group">
+                    <label for="firstname">Name:</label>
+                    <div class="name-container">
+                        <input type="text" id="firstname" name="firstname" placeholder="First Name"/>
+                        <input type="text" id="lastname" name="lastname" placeholder="Last Name"/>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="preferedPro">Prefered Pronouns:</label>
+                    <input type="text" id="preferedPro" placeholder="e.g., He/Him, She/Her, They/Them" required/>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="text" id="email" placeholder="smaple@gmail.com" required/>
+                </div>
+
+                <div class="form-group">
+                    <label for="workP">Work Phone:</label>
+                    <input type="text" id="workP" placeholder="Work Phone" required/>
+                </div>
+
+                <div class="form-group">
+                    <label for="cellP">Cell Phone:</label>
+                    <input type="text" id="cellP" placeholder="Cell Phone" required/>
+                </div>
+
+                <div class="form-group">
+                    <label for="jobTitle">Job Title:</label>
+                    <input type="text" id="jobTitle" placeholder="Your Job Title" required/>
+                </div>
+
+                <div class="form-group">
+                    <label for="company">Company:</label>
+                    <input type="text" id="company" placeholder="Your Company" required/>
+                </div>
+
+                <div class="form-group">
+                    <label for="fullbusi">Full Business Address:</label>
+                    <input type="text" id="fullbusi" placeholder="Your Full Business Address" required/>
+                </div>
+
+                <div class="form-group">
+                    <label for="companyWeb">Company Website:</label>
+                    <input type="text" id="companyWeb" placeholder="Your Company Website" required/>
+                </div>
+            </div>
+                <div class="center-line"></div>
+            <div class="col2">
+                <div class="form-group">
+                    <label for="compDes">Company Description:</label>
+                    <input type="text" id="compDes" placeholder="Company Description" required/><br>
+                </div>
+
+                <div class="form-group">
+                    <label for="compPage">Company Facebook Page:</label>
+                    <input type="text" id="compPage" placeholder="Company Facebook Page" required/><br>
+                </div>
+
+                <div class="form-group">
+                    <label for="comptwit">Company Twitter Handle:</label>
+                    <input type="text" id="comptwit" placeholder="Company Twitter Handle" required/><br>
+                </div>
+
+                <div class="form-group">
+                    <label for="compLink">Company LinkedIn Handle:</label>
+                    <input type="text" id="compLink" placeholder="Company LinkedIn Handle" required/><br>
+                </div>
+
+                <div class="form-group">
+                    <label for="sponsor-leadership">Sponsor Leadership:</label><br>
+                    <input type="radio" id="gold" name="sponsor-leadership" value="Gold">
+                    <label for="gold">Gold</label><br>
+                    <input type="radio" id="diamond" name="sponsor-leadership" value="Diamond">
+                    <label for="diamond">Diamond</label><br>
+                    <input type="radio" id="platinum" name="sponsor-leadership" value="Platinum">
+                    <label for="platinum">Platinum</label><br>
+                </div>
+
+                <div class="form-group">
+                    <label for="addGuest">Additional Guest (name, email) :</label>
+                    <input type="text" id="addGuest" placeholder="Additional Guest (name, email)" required/><br>
+                </div>
+            </div>
+
+            <div class="container">
+                <form id="survey-form" action="#" method="post">
+                    <div class="form-group">
+                        <input type="submit" value="Submit">
+                    </div>
+                    <div class="form-group">
+                        <input type="reset" value="Reset">
+                    </div>
+                    <div class="form-group">
+                        <input type="return to main page" onclick="window.location.href='MAIN PAGE.HTML'" value="Return to Main Page">
+                    </div>
+
+        </form>
+    
+        </div>
+    </body>
+</html>

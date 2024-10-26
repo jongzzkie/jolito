@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<head>
+	<title>
+		Student Registration Form
+	</title>
+	<style>	
+		body {
+            font-family: 'Times New Roman', Times, serif, sans-serif;
+			background-image: url('starynight.jpg');
+            background-position: contain;
+            background-size: cover;
+        }
+        h1 {
+			text-align: left;
+			font-size: 36px;
+			font-weight: bold;
+			color: #070606; /* Text color */
+			padding: 20px 0; /* Top and bottom padding */
+			margin-bottom: 30px; /* Space below the heading */
+			background: linear-gradient(90deg, #221c1c, #00E6E6); /* Gradient background */
+			background-clip: text;
+			-webkit-background-clip: text; /* Apply text gradient */
+			-webkit-text-fill-color: transparent; /* Hide text fill */
+		}
+		
+		
+		
+		form {
+			background-color: #8df5c4;
+			max-width: 800px;
+			margin: 30px auto;
+			padding: 30px 20px;
+			box-shadow: 2px 5px 10px rgba(0, 0, 0, 1);
+		}
+		.form-control {
+			text-align: left;
+			margin-bottom: 25px;
+			justify-content: space-between;
+		}
+		.form-control label {
+			display: block;
+			margin-bottom: 10px;
+		}
+		.form-control textarea,
+		.form-control input,
+		.form-control select {
+			border: 2px solid #eff7fa;
+			border-radius: 1px;
+			font-family: Arial;
+			padding: 10px;
+			display: inline;
+			width: 40%;
+			box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.1);
+			margin-bottom: 10px;
+		}
+		button {
+			background-color: #05c46b;
+			border: 2px solid #777;
+			border-radius: 1px;
+			font-family: Arial;
+			font-size: 21px;
+			display: block;
+			width: 100%;
+			margin-top: 20px;
+			margin-bottom: 20px;	
+		}	
+		input[type="SUBMIT"] {
+            background-color: #630421;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        input[type="RESET"] {
+            background-color: #630421;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        input[type="RETURN TO MAIN PAGE"] {
+            background-color: #630421;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+
+        input[type="SUBMIT"]:hover {
+            background-color: #630421;
+        }
+        input[type="RESET"]:hover {
+            background-color: #630421;
+        }
+        input[type="RETURN TO MAIN PAGE"]:hover {
+            background-color: #630421;
+        }
+	</style>
+<body>
+	<form id'form'>
+		<h1>Student Registration Form</h1>
+        <p>Fill out the form for Registration</p>
+		<hr style="border: 2px solid black;">
+
+		<div class="form-control">
+		<label for="name" id="label-name">
+			Name 
+		</label>
+		<input type="text"
+			placeholder="Enter your first name"  />
+		<input type="text"
+			placeholder="Enter your last name" />
+		</div>
+		<div class="form-control">
+  		<label for="birthday">
+			Birthday
+		</label>
+ 		<input type="date" id="birthday">
+		
+		<label style="display: inline"; for="sex">
+			Sex
+		</label>
+		<select name="sex" id="sex">
+			<option>Sex</option>
+			<option>Male</option>
+			<option>Female</option>
+			<option>Prefer not to say</option>
+		</select>
+		</div>
+		<div class="form-control">
+			<label for"address">
+				Address
+			</label>
+			<input type="text" style="width: 85%";
+				placeholder="Address line 1" />
+			<input type="text" style="width: 85%";
+				placeholder="Address line 2" />
+			<input type="text"
+				placeholder="City" />
+			<select name="Region">
+				<option>Region</option>
+				<option>Region I – Ilocos Region</option>
+				<option>Region II – Cagayan Valley</option>
+				<option>Region III – Central Luzon</option>
+				<option>Region IV‑A – CALABARZON</option>
+				<option>MIMAROPA Region</option>
+				<option>Region V – Bicol Region</option>
+				<option>Region VI – Western Visayas</option>
+				<option>Region VII – Central Visayas</option>
+				<option>Region VIII – Eastern Visayas</option>
+				<option>Region IX – Zamboanga Peninsula</option>
+				<option>Region X – Northern Mindanao</option>
+				<option>Region XI – Davao Region</option>
+				<option>Region XII – SOCCSKSARGEN</option>
+				<option>Region XIII – Caraga</option>
+				<option>NCR – National Capital Region</option>
+				<option>CAR – Cordillera Administrative Region</option>
+				<option>BARMM – Bangsamoro Autonomous Region in Muslim Mindanao</option>
+			</select>
+			<input type="text"
+				placeholder="Postal/ZIP code" />
+			<input type+="text" 
+				placeholder="Country" />
+		</div>
+		<div class="form-control">
+			<label for"email">
+				Email
+			</label>
+			<input type="text" style="width: 85%"; 
+				placeholder="Enter your email" />
+		</div>
+		<div class="form-control">
+			<label for="phone">
+				Phone
+			</label>
+			<input type="text"
+				placeholder="Phone number" />
+			<!--<label for="Wphone" style="display: inline";>
+				Work Phone
+			</label>-->
+			<input type="text"
+				placeholder="Work Phone number" />
+		</div>
+		<div class="form-control">
+			<label for="company">
+				Company
+			</label>
+			<input type="text" style="width: 85%";
+				placeholder="Company Name" />
+		</div>
+		<div class="form-control">
+			<label for="courses">
+				Courses
+			</label>
+			<select name="courses">
+    				<option>--Please choose an option--</option>
+    				<optgroup label="Humanities">
+        			<option>Bachelor of Arts in History (AB History)</option>
+        			<option>Bachelor of Arts in Philosophy (AB Philosophy)</option>
+        			<option>Bachelor of Fine Arts Major in Industrial Design (BFA)</option>
+        			<option>Bachelor of Fine Arts Major in Painting (BFA)</option>
+        			<option>Bachelor of Fine Arts Major in Sculpture (BFA)</option>
+        			<option>Bachelor of Fine Arts Major in Visual Communication (BFA)</option>
+    			</optgroup>
+   				<optgroup label="Social Sciences">
+        			<option>Bachelor of Arts in Economics (AB Economics)</option>
+        			<option>Bachelor of Science in Economics (BS Economics)</option>
+        			<option>Bachelor of Arts in Psychology (AB Psychology)</option>
+        			<option>Bachelor of Science in Psychology (BS Psychology)</option>
+        			<option>Bachelor of Science in Criminology (BS Criminology)</option>
+        			<option>Bachelor of Arts in Political Science (AB Political Science)</option>
+    			</optgroup>
+    				<optgroup label="Natural Sciences">
+        			<option>Bachelor of Science in Environmental Science (BSES)</option>
+        			<option>Bachelor of Science in Forestry (BS Forestry)</option>
+        			<option>Bachelor of Science in Fisheries (BSFi)</option>
+        			<option>Bachelor of Science in Geology (BS Geology)</option>
+        			<option>Bachelor of Science in Biology (BS Biology)</option>
+        			<option>Bachelor of Science in Molecular Biology (BS Molecular Biology)</option>
+    			</optgroup>
+    				<optgroup label="Formal Sciences">
+        			<option>Bachelor of Science in Mathematics (BS Mathematics)</option>
+        			<option>Bachelor of Science in Statistics (BS Statistics)</option>
+       				<option>Bachelor of Science in Computer Science (BS Computer Science)</option>
+        			<option>Bachelor of Science in Information Technology (BS IT)</option>
+				<option>Bachelor of SCience in Information System (BS IS)</option>
+    			</optgroup>
+    				<optgroup label="Professions and Applied Sciences">
+        			<option value="bsNursing">Bachelor of Science in Nursing (BSN)</option>
+        			<option value="bsPhysicalTherapy">Bachelor of Science in Physical Therapy (BSPT)</option>
+        			<option value="bsPharmacy">Bachelor of Science in Pharmacy (BSP)</option>
+        			<option value="bsMedicalTechnology">Bachelor of Science in Medical Technology (BS MedTech)</option>
+        			<option value="bsAccountancy">Bachelor of Science in Accountancy (BSA)</option>
+        			<option value="bsCivilEngineering">Bachelor of Science in Civil Engineering (BSCE)</option>
+        			<option value="bsMechanicalEngineering">Bachelor of Science in Mechanical Engineering (BSME)</option>
+        			<option value="bsElectricalEngineering">Bachelor of Science in Electrical Engineering (BSEE)</option>
+    			</optgroup>
+			</select>
+		</div>
+		<div class="form-control">
+			<label for="comment">
+				Comment
+			</label>
+			<input type="text" style="width: 85%";
+				placeholder="Comment" />
+		</div>
+    </form>
+		</div>
+		<form id="survey-form" action="#" method="post">
+			<div class="form-group">
+				<input type="submit" value="Submit">
+			</div>
+			<div class="form-group">
+				<input type="reset" value="Reset">
+			</div>
+			<div class="form-group">
+				<input type="return to main page" onclick="window.location.href='MAIN PAGE.HTML'" value="Return to Main Page">
+			</div>
+
+		</div>
+
+	</form>
+</body>
+</head>
+</html>

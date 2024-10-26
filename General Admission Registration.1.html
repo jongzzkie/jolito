@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>General Admission Registration</title>
+
+    <style>
+        h1 {
+            text-align: center;
+            background: (violet);
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: rgb(36, 32, 32);
+            padding: 10px;
+        }
+
+        body {
+            font-family: 'Times New Roman', Times, serif, sans-serif;
+            background-image: url('SAD.jpg');
+            background-repeat: no-repeat;
+            background-position: contain;
+            background-size: cover;
+        }
+        .name-container{
+            display: flex; 
+        }
+        .name-container input {
+            flex: 1; 
+            margin-right: 5px; 
+            margin-left: 1%;
+            width: 0.1%;
+        }
+        .container {
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgb(148, 83, 83);
+        }
+
+        .container2 {
+            background: #f6f6f6;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            overflow: hidden;
+            padding: 10px;
+            position: relative;
+        }
+        .center-line {
+            position: absolute;
+            top: 10%;
+            bottom: 50;
+            left: 50%;
+            border-left: 0.5px solid #797878;
+            height: 100%;
+            transform: translateX(-50%);
+        }
+
+
+        form {
+            margin-top: 20px;
+            background: rgba(237, 238, 238, 0.767);
+            border-radius: 0.25rem;
+        }
+
+        .form-group {
+            margin-bottom: 10px;
+            justify-content: right;
+        }
+
+        label {
+            font-weight: bold;
+        }
+
+        .col1 {
+            float: left;
+            width: 50%;
+        }
+
+        .col2 {
+            margin: 2%;
+            float: left;
+            width: 45%;
+        }
+
+        input[type="SUBMIT"] {
+            background-color: #630421;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        input[type="RESET"] {
+            background-color: #630421;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        input[type="RETURN TO MAIN PAGE"] {
+            background-color: #630421;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        p {
+            font-size: 20px;
+            color: rgb(0, 0, 0);
+            text-shadow: 3px 3px 4px #000000;
+            line-height: 1;
+        }
+        textarea {
+            display: block;
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+            margin-top: 5px;
+            resize: none;
+        }
+
+        input[type="text"] {
+            width: calc(100% - 20px); /* Adjusted width */
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+            margin-top: 5px;
+            margin-bottom: 10px;
+        }
+
+
+    </style>
+    </head>
+    <body>
+    <div class="container">
+    <h1>General Admission Registration</h1>
+    <form id="survey-form" action="#" method="post">
+    <div class="col1">
+        <div class="form-group">
+            <label for="firstname">Name:</label>
+            <div class="name-container">
+                <input type="text" id="firstname" name="firstname" placeholder="First Name"/>
+                <input type="text" id="lastname" name="lastname" placeholder="Last Name"/>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label for="email">Email:</label>
+            <input type="text" id="email" placeholder="sample@gmail.com" required/>
+        </div>
+
+        <div class="form-group">
+            <label for="gender">Gender:</label><br>
+            <input type="radio" id="male" name="gender" value="male">
+            <label for="male">Male</label><br>
+            <input type="radio" id="female" name="gender" value="female">
+            <label for="female">Female</label><br>
+        </div>
+        <div class="form-group">
+            <label for="phoneNum">Phone Number:</label>
+            <input type="text" id="phoneNum" required/>
+        </div>
+        <div class="form-group">
+            <label for="emerCont">Emergency Contact :</label>
+            <input type="text" id="emerCont" required/>
+        </div>
+        <div class="form-group">
+            <label for="DoyouReq">Do You Required Parking?</label><br>
+            <input type="radio" id="yes" name="yes" value="yes">
+            <label for="yes">Yes</label><br>
+            <input type="radio" id="no" name="no" value="no">
+            <label for="no">No</label><br>
+        </div>
+        <div class="form-group">
+            <label for="roomPref">What is your room preferences?</label><br>
+            <input type="radio" id="single" name="single" value="single">
+            <label for="single">Single Room</label><br>
+            <input type="radio" id="shared" name="shared" value="shared">
+            <label for="shared">Shared Room</label><br>
+            <input type="radio" id="Noroom" name="Noroom" value="Noroom">
+            <label for="Noroom">No Room needed</label><br>
+        </div>
+    </div>
+
+        <div class=" col2">
+            <div class="form-group">
+                <label for="dietary-restrictions">Do you have Dietary Restrictions?</label><br>
+                <input type="radio" id="none" name="dietary-restrictions" value="none">
+                <label for="none">None</label><br>
+                <input type="radio" id="vegetarian" name="dietary-restrictions" value="vegetarian">
+                <label for="vegetarian">Vegetarian</label><br>
+                <input type="radio" id="gluten-allergy" name="dietary-restrictions" value="gluten-allergy">
+                <label for="gluten-allergy">Gluten Allergy</label><br>
+                <input type="radio" id="lactose-allergy" name="dietary-restrictions" value="lactose-allergy">
+                <label for="lactose-allergy">Lactose Allergy</label><br>
+                <input type="radio" id="nut-allergy" name="dietary-restrictions" value="nut-allergy">
+                <label for="nut-allergy">Nut Allergy</label><br>
+                <input type="radio" id="shellfish-allergy" name="dietary-restrictions" value="shellfish-allergy">
+                <label for="shellfish-allergy">Shellfish Allergy</label>
+            </div>
+            <div class="form-group">
+                <label for="activities">What Activities will you attend?</label><br>
+                <input type="radio" id="gala-dinner" name="activities" value="gala-dinner">
+                <label for="gala-dinner">Awards Gala Dinner</label><br>
+                <input type="radio" id="luncheon" name="activities" value="luncheon">
+                <label for="luncheon">Luncheon</label><br>
+                <input type="radio" id="town-hall" name="activities" value="town-hall">
+                <label for="town-hall">Town Hall</label>
+            </div>
+            <div class="form-group">
+                <label for="Doyou">Do you want to see the list of other attendees and their profiles on the official event app?</label><br>
+                <input type="radio" id="yes" name="yes" value="yes">
+                <label for="yes">Yes</label><br>
+                <input type="radio" id="no" name="no" value="no">
+                <label for="no">No</label><br>
+            </div>
+    </div>
+    <div class="container2">
+        <form id="survey-form" action="#" method="post">
+            <div class="form-group">
+                <input type="submit" value="Submit">
+            </div>
+            <div class="form-group">
+                <input type="reset" value="Reset">
+            </div>
+            <div class="form-group">
+                <input type="return to main page" onclick="window.location.href='MAIN PAGE.HTML'" value="Return to Main Page">
+            </div>
+    </form>
+    </div>
+    </body>
+</html>
